@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 2 – Probability</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Probability is a branch of mathematics that deals with the study of uncertainty.
+        It helps in predicting the likelihood of occurrence of an event.
+    </p>
+</section>
+
+<section>
+    <h2>2. Definition of Probability</h2>
+    <p>
+        Probability of an event is defined as the ratio of the number of favorable
+        outcomes to the total number of equally likely outcomes.
+    </p>
+    <p>
+        <b>Formula:</b> P(E) = (Number of favorable outcomes) / (Total number of outcomes)
+    </p>
+</section>
+
+<section>
+    <h2>3. Interpretation of Probability Value</h2>
+    <p>
+        The value of probability always lies between 0 and 1.
+    </p>
+    <ul>
+        <li>P(E) = 0 → Event is impossible</li>
+        <li>P(E) = 1 → Event is certain</li>
+        <li>0 &lt; P(E) &lt; 1 → Event is possible</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Addition Rule of Probability</h2>
+    <p>
+        The addition rule is used to find the probability of occurrence of at least one
+        of the two events.
+    </p>
+    <p>
+        <b>Formula:</b> P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+    </p>
+    <p>
+        If A and B are mutually exclusive:
+        <br>
+        <b>P(A ∪ B) = P(A) + P(B)</b>
+    </p>
+</section>
+
+<section>
+    <h2>5. Multiplication Rule of Probability</h2>
+    <p>
+        The multiplication rule is used to find the probability of occurrence of two
+        events together.
+    </p>
+    <p>
+        <b>Formula:</b> P(A ∩ B) = P(A) × P(B | A)
+    </p>
+    <p>
+        If A and B are independent:
+        <br>
+        <b>P(A ∩ B) = P(A) × P(B)</b>
+    </p>
+</section>
+
+<section>
+    <h2>6. Bayes’ Rule</h2>
+    <p>
+        Bayes’ rule is used to find the conditional probability of an event when some
+        related information is given.
+    </p>
+    <p>
+        <b>Formula:</b>
+        <br>
+        P(A | B) = [P(B | A) × P(A)] / P(B)
+    </p>
+    <p>
+        Bayes’ theorem is widely used in statistics, machine learning, and decision
+        making.
+    </p>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Probability plays a vital role in predicting uncertain events. Understanding its
+        rules and applications helps in solving real-world problems efficiently.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Chapter 2 – Probability</p>
+</footer>
+
+</body>
+</html>
