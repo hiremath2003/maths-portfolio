@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab – Data Handling and Data Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .chart {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        svg {
+            background: #f9fafb;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>Lab Introduction</h2>
+    <p>
+        This lab introduces basic concepts of data handling and data visualization.
+        Graphical representations help in understanding data distribution, spread,
+        and central tendency.
+    </p>
+</section>
+
+<section>
+    <h2>Histogram</h2>
+    <p>
+        A histogram represents frequency distribution using continuous bars.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="200">
+            <rect x="40" y="80" width="40" height="100" fill="#2563eb"/>
+            <rect x="90" y="40" width="40" height="140" fill="#2563eb"/>
+            <rect x="140" y="20" width="40" height="160" fill="#2563eb"/>
+            <rect x="190" y="60" width="40" height="120" fill="#2563eb"/>
+            <rect x="240" y="100" width="40" height="80" fill="#2563eb"/>
+        </svg>
+        <p><b>Fig:</b> Histogram</p>
+    </div>
+</section>
+
+<section>
+    <h2>Skewness</h2>
+    <p>
+        Skewness indicates asymmetry in a data distribution.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="200">
+            <path d="M20 160 Q120 20 380 160" fill="none" stroke="#16a34a" stroke-width="3"/>
+        </svg>
+        <p><b>Fig:</b> Positively Skewed Distribution</p>
+    </div>
+</section>
+
+<section>
+    <h2>Box Plot</h2>
+    <p>
+        A box plot shows data distribution using minimum, quartiles, median, and maximum.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="120">
+            <line x1="50" y1="60" x2="350" y2="60" stroke="black"/>
+            <rect x="140" y="40" width="120" height="40" fill="#facc15"/>
+            <line x1="200" y1="40" x2="200" y2="80" stroke="black" stroke-width="2"/>
+            <line x1="100" y1="60" x2="140" y2="60" stroke="black"/>
+            <line x1="260" y1="60" x2="300" y2="60" stroke="black"/>
+        </svg>
+        <p><b>Fig:</b> Box Plot</p>
+    </div>
+</section>
+
+<section>
+    <h2>Measures of Central Tendency</h2>
+    <p>
+        Measures of central tendency describe the center of the data.
+    </p>
+    <ul>
+        <li><b>Mean:</b> Arithmetic average</li>
+        <li><b>Median:</b> Middle value</li>
+        <li><b>Mode:</b> Most frequent value</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Measures of Dispersion</h2>
+    <p>
+        Measures of dispersion describe the spread of data.
+    </p>
+    <ul>
+        <li>Range</li>
+        <li>Variance</li>
+        <li>Standard Deviation</li>
+        <li>Coefficient of Variation</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Data visualization techniques like histograms and box plots help in
+        understanding data distribution clearly. Measures of central tendency and
+        dispersion summarize data efficiently.
+    </p>
+</section>
+
+</body>
+</html>
