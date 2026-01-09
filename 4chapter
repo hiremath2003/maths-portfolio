@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 3 – Random Variables and Probability Distribution</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .example {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Random variables and probability distributions form the foundation of probability
+        theory. They help in modeling real-world random experiments mathematically.
+    </p>
+</section>
+
+<section>
+    <h2>2. Random Variables</h2>
+    <p>
+        A random variable is a function that assigns a numerical value to each outcome
+        of a random experiment.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Tossing a coin  
+        <br>
+        Let X = number of heads obtained  
+        <br>
+        Possible values of X: 0 or 1
+    </div>
+</section>
+
+<section>
+    <h2>3. Types of Random Variables</h2>
+    <ul>
+        <li><b>Discrete Random Variable:</b> Takes countable values.</li>
+        <li><b>Continuous Random Variable:</b> Takes uncountable values within an interval.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Discrete Random Variable</h2>
+    <p>
+        A discrete random variable takes a finite or countably infinite number of values.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Number of defective items in a batch
+    </div>
+</section>
+
+<section>
+    <h2>5. Continuous Random Variable</h2>
+    <p>
+        A continuous random variable takes values over a continuous range.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Time taken to complete a task
+    </div>
+</section>
+
+<section>
+    <h2>6. Probability Distribution</h2>
+    <p>
+        A probability distribution describes how probabilities are assigned to values
+        of a random variable.
+    </p>
+</section>
+
+<section>
+    <h2>7. Binomial Distribution</h2>
+    <p>
+        Binomial distribution applies to experiments with a fixed number of trials where
+        each trial has two possible outcomes.
+    </p>
+    <p>
+        <b>Formula:</b>  
+        P(X = x) = ⁿCₓ pˣ qⁿ⁻ˣ
+    </p>
+    <ul>
+        <li>n = number of trials</li>
+        <li>p = probability of success</li>
+        <li>q = 1 − p</li>
+    </ul>
+</section>
+
+<section>
+    <h2>8. Poisson Distribution</h2>
+    <p>
+        Poisson distribution is used to model the number of occurrences of an event
+        in a fixed interval of time or space.
+    </p>
+    <p>
+        <b>Formula:</b>  
+        P(X = x) = (e⁻ˡ λˣ) / x!
+    </p>
+    <p>
+        where λ is the mean number of occurrences.
+    </p>
+</section>
+
+<section>
+    <h2>9. Normal Distribution</h2>
+    <p>
+        Normal distribution is a continuous probability distribution that is symmetric
+        about the mean.
+    </p>
+    <ul>
+        <li>Mean = μ</li>
+        <li>Standard Deviation = σ</li>
+        <li>Bell-shaped curve</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Random variables and probability distributions help in modeling uncertainty and
+        analyzing real-world random phenomena. The binomial, Poisson, and normal
+        distributions are widely used in statistics and engineering.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Chapter 3 – Random Variables and Probability Distribution</p>
+</footer>
+
+</body>
+</html>
