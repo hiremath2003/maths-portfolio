@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1 – Description of Data</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Description of Data is a branch of statistics that deals with the collection,
+        organization, presentation, and analysis of data. It helps in summarizing large
+        data sets and understanding patterns and trends.
+    </p>
+</section>
+
+<section>
+    <h2>2. Data</h2>
+    <p>
+        Data refers to a collection of facts, figures, or observations collected for
+        analysis. Data can be numerical or non-numerical and is the foundation of
+        statistical analysis.
+    </p>
+</section>
+
+<section>
+    <h2>3. Types of Variables</h2>
+    <ul>
+        <li><b>Qualitative Variables:</b> Non-numerical data such as gender, color, or type.</li>
+        <li><b>Quantitative Variables:</b> Numerical data such as height, weight, and marks.</li>
+        <li><b>Discrete Variables:</b> Countable values (e.g., number of students).</li>
+        <li><b>Continuous Variables:</b> Measurable values (e.g., time, temperature).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Mean</h2>
+    <p>
+        Mean is the arithmetic average of a set of values.
+    </p>
+    <p><b>Formula:</b> Mean = (Sum of observations) / (Number of observations)</p>
+</section>
+
+<section>
+    <h2>5. Weighted Mean</h2>
+    <p>
+        Weighted mean is an average where each value has a specific weight according to
+        its importance.
+    </p>
+    <p><b>Formula:</b> Weighted Mean = Σ(wx) / Σw</p>
+</section>
+
+<section>
+    <h2>6. Median</h2>
+    <p>
+        Median is the middle value of a data set when the observations are arranged in
+        ascending or descending order.
+    </p>
+</section>
+
+<section>
+    <h2>7. Mode</h2>
+    <p>
+        Mode is the value that occurs most frequently in the data set.
+    </p>
+</section>
+
+<section>
+    <h2>8. Quartiles</h2>
+    <p>
+        Quartiles divide the data into four equal parts.
+    </p>
+    <ul>
+        <li><b>Q1:</b> First quartile (25% of data)</li>
+        <li><b>Q2:</b> Second quartile (Median)</li>
+        <li><b>Q3:</b> Third quartile (75% of data)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>9. Variance</h2>
+    <p>
+        Variance measures how far each value in the data set is from the mean.
+    </p>
+    <p><b>Formula:</b> Variance = Σ(x − x̄)² / n</p>
+</section>
+
+<section>
+    <h2>10. Coefficient of Variation</h2>
+    <p>
+        Coefficient of Variation (CV) measures relative variability in data.
+    </p>
+    <p><b>Formula:</b> CV = (Standard Deviation / Mean) × 100</p>
+</section>
+
+<section>
+    <h2>11. Skewness</h2>
+    <p>
+        Skewness indicates the asymmetry of a data distribution.
+    </p>
+    <ul>
+        <li>Positive Skewness: Right-skewed distribution</li>
+        <li>Negative Skewness: Left-skewed distribution</li>
+        <li>Zero Skewness: Symmetrical distribution</li>
+    </ul>
+</section>
+
+<section>
+    <h2>12. Histogram</h2>
+    <p>
+        A histogram is a graphical representation of frequency distribution using
+        continuous bars.
+    </p>
+</section>
+
+<section>
+    <h2>13. Box Plot</h2>
+    <p>
+        A box plot is a visual representation of data using minimum, Q1, median, Q3,
+        and maximum values.
+    </p>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Description of data plays an important role in statistics. It helps in
+        understanding data behavior, comparing datasets, and making informed decisions.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Mathematics Portfolio | Shrusti Hiremath</p>
+</footer>
+
+</body>
+</html>
