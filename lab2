@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab – Probability Distribution & Hypothesis Testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .chart {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        svg {
+            background-color: #f9fafb;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>Lab Introduction</h2>
+    <p>
+        This lab focuses on probability distributions and hypothesis testing techniques
+        for proportions and means. Graphical representation helps in better understanding
+        of statistical concepts.
+    </p>
+</section>
+
+<section>
+    <h2>Probability Distribution</h2>
+    <p>
+        A probability distribution describes how probabilities are assigned to outcomes
+        of a random variable.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="200">
+            <rect x="60" y="100" width="40" height="80" fill="#2563eb"/>
+            <rect x="120" y="60" width="40" height="120" fill="#2563eb"/>
+            <rect x="180" y="30" width="40" height="150" fill="#2563eb"/>
+            <rect x="240" y="60" width="40" height="120" fill="#2563eb"/>
+            <rect x="300" y="100" width="40" height="80" fill="#2563eb"/>
+        </svg>
+        <p><b>Fig:</b> Discrete Probability Distribution</p>
+    </div>
+</section>
+
+<section>
+    <h2>Normal Distribution</h2>
+    <p>
+        Normal distribution is a continuous distribution that is symmetric about the mean.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="200">
+            <path d="M20 160 Q200 20 380 160" fill="none" stroke="#16a34a" stroke-width="3"/>
+        </svg>
+        <p><b>Fig:</b> Normal Distribution Curve</p>
+    </div>
+</section>
+
+<section>
+    <h2>Hypothesis Testing – Basic Idea</h2>
+    <p>
+        Hypothesis testing is a statistical method used to make decisions using sample data.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="140">
+            <rect x="20" y="40" width="120" height="40" fill="#fde68a"/>
+            <text x="40" y="65">Null Hypothesis</text>
+
+            <line x1="140" y1="60" x2="200" y2="60" stroke="black"/>
+
+            <rect x="200" y="40" width="120" height="40" fill="#bbf7d0"/>
+            <text x="220" y="65">Decision</text>
+        </svg>
+        <p><b>Fig:</b> Hypothesis Testing Flow</p>
+    </div>
+</section>
+
+<section>
+    <h2>Test for Proportion</h2>
+    <p>
+        Hypothesis test for proportion checks whether a population proportion differs
+        from a specified value.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="120">
+            <line x1="50" y1="60" x2="350" y2="60" stroke="black"/>
+            <line x1="200" y1="40" x2="200" y2="80" stroke="red" stroke-width="2"/>
+        </svg>
+        <p><b>Fig:</b> Z-test for Proportion</p>
+    </div>
+</section>
+
+<section>
+    <h2>Test for Mean (Single Sample)</h2>
+    <p>
+        This test checks whether the sample mean differs significantly from the
+        population mean.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="150">
+            <path d="M20 120 Q200 20 380 120" fill="none" stroke="#2563eb" stroke-width="3"/>
+            <line x1="200" y1="20" x2="200" y2="120" stroke="red"/>
+        </svg>
+        <p><b>Fig:</b> Z-test for Single Mean</p>
+    </div>
+</section>
+
+<section>
+    <h2>Test for Difference of Means</h2>
+    <p>
+        This test compares two population means to determine if there is a significant
+        difference between them.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="150">
+            <path d="M20 120 Q150 40 280 120" fill="none" stroke="#16a34a" stroke-width="3"/>
+            <path d="M120 120 Q250 40 380 120" fill="none" stroke="#dc2626" stroke-width="3"/>
+        </svg>
+        <p><b>Fig:</b> Difference of Two Means</p>
+    </div>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Probability distributions and hypothesis testing are essential tools in
+        statistical analysis. Graphical representations simplify interpretation and
+        improve understanding of results.
+    </p>
+</section>
+
+</body>
+</html>
