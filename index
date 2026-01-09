@@ -150,3 +150,196 @@
 
 </body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Statistics Portfolio</title>
+
+<style>
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:#f2f4f7;
+    margin:0;
+    line-height:1.7;
+}
+
+nav{
+    background:#0f172a;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+section{
+    background:white;
+    padding:20px;
+    margin:30px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    margin-top:30px;
+}
+
+h2{
+    color:#0f172a;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+ul{margin-left:20px;}
+
+.chart{text-align:center;margin-top:15px;}
+svg{background:#f9fafb;border-radius:10px;}
+
+footer{
+    text-align:center;
+    margin:40px;
+    color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📘 Statistics Portfolio</h1>
+
+<nav>
+<a href="#ch1">Chapter 1</a>
+<a href="#ch2">Chapter 2</a>
+<a href="#lab1">Lab 1</a>
+<a href="#ch3">Chapter 3</a>
+<a href="#ch4">Chapter 4</a>
+<a href="#lab2">Lab 2</a>
+</nav>
+
+<!-- ================= CHAPTER 1 ================= -->
+<section id="ch1">
+<h2>Chapter 1: Description of Data</h2>
+<p>Description of Data deals with collection, organization, and analysis of data.</p>
+
+<ul>
+<li>Types of Variables</li>
+<li>Mean, Median, Mode</li>
+<li>Quartiles</li>
+<li>Variance & Coefficient of Variation</li>
+<li>Skewness</li>
+<li>Histogram & Box Plot</li>
+</ul>
+</section>
+
+<!-- ================= CHAPTER 2 ================= -->
+<section id="ch2">
+<h2>Chapter 2: Probability</h2>
+<ul>
+<li>Definition of Probability</li>
+<li>Interpretation of Probability Values</li>
+<li>Addition Rule</li>
+<li>Multiplication Rule</li>
+<li>Bayes’ Theorem</li>
+</ul>
+</section>
+
+<!-- ================= LAB 1 ================= -->
+<section id="lab1">
+<h2>Lab 1: Data Handling & Visualization</h2>
+
+<h3>Histogram</h3>
+<div class="chart">
+<svg width="400" height="200">
+<rect x="50" y="80" width="40" height="100" fill="#2563eb"/>
+<rect x="110" y="40" width="40" height="140" fill="#2563eb"/>
+<rect x="170" y="20" width="40" height="160" fill="#2563eb"/>
+<rect x="230" y="60" width="40" height="120" fill="#2563eb"/>
+</svg>
+</div>
+
+<h3>Skewness</h3>
+<div class="chart">
+<svg width="400" height="200">
+<path d="M20 160 Q200 20 380 160" fill="none" stroke="#16a34a" stroke-width="3"/>
+</svg>
+</div>
+
+<h3>Box Plot</h3>
+<div class="chart">
+<svg width="400" height="120">
+<line x1="60" y1="60" x2="340" y2="60" stroke="black"/>
+<rect x="150" y="40" width="100" height="40" fill="#facc15"/>
+<line x1="200" y1="40" x2="200" y2="80" stroke="black"/>
+</svg>
+</div>
+</section>
+
+<!-- ================= CHAPTER 3 ================= -->
+<section id="ch3">
+<h2>Chapter 3: Random Variables & Probability Distribution</h2>
+<ul>
+<li>Random Variables</li>
+<li>Discrete & Continuous Variables</li>
+<li>Binomial Distribution</li>
+<li>Poisson Distribution</li>
+<li>Normal Distribution</li>
+</ul>
+</section>
+
+<!-- ================= CHAPTER 4 ================= -->
+<section id="ch4">
+<h2>Chapter 4: Statistical Inference</h2>
+<ul>
+<li>Hypothesis Testing Terminologies</li>
+<li>Confidence Interval</li>
+<li>Sample Size Determination</li>
+<li>Test for Proportions</li>
+<li>Test for Means (Single & Difference)</li>
+</ul>
+</section>
+
+<!-- ================= LAB 2 ================= -->
+<section id="lab2">
+<h2>Lab 2: Probability Distribution & Hypothesis Testing</h2>
+
+<h3>Normal Distribution</h3>
+<div class="chart">
+<svg width="400" height="200">
+<path d="M20 160 Q200 20 380 160" fill="none" stroke="#2563eb" stroke-width="3"/>
+</svg>
+</div>
+
+<h3>Hypothesis Testing Flow</h3>
+<div class="chart">
+<svg width="400" height="140">
+<rect x="20" y="40" width="120" height="40" fill="#fde68a"/>
+<text x="40" y="65">H₀</text>
+<line x1="140" y1="60" x2="200" y2="60" stroke="black"/>
+<rect x="200" y="40" width="120" height="40" fill="#bbf7d0"/>
+<text x="225" y="65">Decision</text>
+</svg>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Statistics Portfolio</p>
+</footer>
+
+</body>
+</html>
