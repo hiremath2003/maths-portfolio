@@ -144,15 +144,10 @@
     <p><strong>GitHub:</strong> https://github.com/your-username</p>
 </section>
 
-<footer>
-    <p>© 2026 Shrusti Hiremath | Portfolio</p>
-</footer>
+
 
 </body>
 </html>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -165,77 +160,66 @@ body{
     font-family:"Segoe UI",Arial,sans-serif;
     background:#f2f4f7;
     margin:0;
-    line-height:1.7;
 }
 
+/* NAV BAR */
 nav{
     background:#0f172a;
     padding:15px;
-    position:sticky;
-    top:0;
-    z-index:100;
+    text-align:center;
 }
 
-nav a{
+nav button{
+    background:none;
+    border:none;
     color:white;
     margin:10px;
-    text-decoration:none;
+    font-size:16px;
     font-weight:bold;
+    cursor:pointer;
 }
 
-nav a:hover{
-    text-decoration:underline;
+nav button:hover{
+    color:#38bdf8;
 }
 
-section{
+/* CHAPTER SECTION */
+.section{
+    display:none;
     background:white;
-    padding:20px;
+    padding:25px;
     margin:30px;
     border-radius:12px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-h1{
-    text-align:center;
-    margin-top:30px;
-}
-
-h2{
+.section h2{
     color:#0f172a;
     border-bottom:2px solid #ddd;
     padding-bottom:5px;
-}
-
-ul{margin-left:20px;}
-
-.chart{text-align:center;margin-top:15px;}
-svg{background:#f9fafb;border-radius:10px;}
-
-footer{
-    text-align:center;
-    margin:40px;
-    color:#555;
 }
 </style>
 </head>
 
 <body>
 
-<h1>📘 Statistics Portfolio</h1>
+<h1 style="text-align:center;margin-top:20px;">📘 Statistics Portfolio</h1>
 
 <nav>
-<a href="#ch1">Chapter 1</a>
-<a href="#ch2">Chapter 2</a>
-<a href="#lab1">Lab 1</a>
-<a href="#ch3">Chapter 3</a>
-<a href="#ch4">Chapter 4</a>
-<a href="#lab2">Lab 2</a>
+<button onclick="showSection('ch1')">Chapter 1</button>
+<button onclick="showSection('ch2')">Chapter 2</button>
+<button onclick="showSection('lab1')">Lab 1</button>
+<button onclick="showSection('ch3')">Chapter 3</button>
+<button onclick="showSection('ch4')">Chapter 4</button>
+<button onclick="showSection('lab2')">Lab 2</button>
 </nav>
 
 <!-- ================= CHAPTER 1 ================= -->
-<section id="ch1">
+<div id="ch1" class="section">
 <h2>Chapter 1: Description of Data</h2>
-<p>Description of Data deals with collection, organization, and analysis of data.</p>
+<p>
+Description of Data deals with collection, organization and analysis of data.
+</p>
 
 <ul>
 <li>Types of Variables</li>
@@ -243,79 +227,856 @@ footer{
 <li>Quartiles</li>
 <li>Variance & Coefficient of Variation</li>
 <li>Skewness</li>
-<li>Histogram & Box Plot</li>
-</ul>
+<li>Histogram & Box Plot<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1 – Description of Data</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Description of Data is a branch of statistics that deals with the collection,
+        organization, presentation, and analysis of data. It helps in summarizing large
+        data sets and understanding patterns and trends.
+    </p>
 </section>
 
+<section>
+    <h2>2. Data</h2>
+    <p>
+        Data refers to a collection of facts, figures, or observations collected for
+        analysis. Data can be numerical or non-numerical and is the foundation of
+        statistical analysis.
+    </p>
+</section>
+
+<section>
+    <h2>3. Types of Variables</h2>
+    <ul>
+        <li><b>Qualitative Variables:</b> Non-numerical data such as gender, color, or type.</li>
+        <li><b>Quantitative Variables:</b> Numerical data such as height, weight, and marks.</li>
+        <li><b>Discrete Variables:</b> Countable values (e.g., number of students).</li>
+        <li><b>Continuous Variables:</b> Measurable values (e.g., time, temperature).</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Mean</h2>
+    <p>
+        Mean is the arithmetic average of a set of values.
+    </p>
+    <p><b>Formula:</b> Mean = (Sum of observations) / (Number of observations)</p>
+</section>
+
+<section>
+    <h2>5. Weighted Mean</h2>
+    <p>
+        Weighted mean is an average where each value has a specific weight according to
+        its importance.
+    </p>
+    <p><b>Formula:</b> Weighted Mean = Σ(wx) / Σw</p>
+</section>
+
+<section>
+    <h2>6. Median</h2>
+    <p>
+        Median is the middle value of a data set when the observations are arranged in
+        ascending or descending order.
+    </p>
+</section>
+
+<section>
+    <h2>7. Mode</h2>
+    <p>
+        Mode is the value that occurs most frequently in the data set.
+    </p>
+</section>
+
+<section>
+    <h2>8. Quartiles</h2>
+    <p>
+        Quartiles divide the data into four equal parts.
+    </p>
+    <ul>
+        <li><b>Q1:</b> First quartile (25% of data)</li>
+        <li><b>Q2:</b> Second quartile (Median)</li>
+        <li><b>Q3:</b> Third quartile (75% of data)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>9. Variance</h2>
+    <p>
+        Variance measures how far each value in the data set is from the mean.
+    </p>
+    <p><b>Formula:</b> Variance = Σ(x − x̄)² / n</p>
+</section>
+
+<section>
+    <h2>10. Coefficient of Variation</h2>
+    <p>
+        Coefficient of Variation (CV) measures relative variability in data.
+    </p>
+    <p><b>Formula:</b> CV = (Standard Deviation / Mean) × 100</p>
+</section>
+
+<section>
+    <h2>11. Skewness</h2>
+    <p>
+        Skewness indicates the asymmetry of a data distribution.
+    </p>
+    <ul>
+        <li>Positive Skewness: Right-skewed distribution</li>
+        <li>Negative Skewness: Left-skewed distribution</li>
+        <li>Zero Skewness: Symmetrical distribution</li>
+    </ul>
+</section>
+
+<section>
+    <h2>12. Histogram</h2>
+    <p>
+        A histogram is a graphical representation of frequency distribution using
+        continuous bars.
+    </p>
+</section>
+
+<section>
+    <h2>13. Box Plot</h2>
+    <p>
+        A box plot is a visual representation of data using minimum, Q1, median, Q3,
+        and maximum values.
+    </p>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Description of data plays an important role in statistics. It helps in
+        understanding data behavior, comparing datasets, and making informed decisions.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Mathematics Portfolio | Shrusti Hiremath</p>
+</footer>
+
+</body>
+</html></li>
+</ul>
+
+<p><b>You can add more theory, formulas, examples here.</b></p>
+</div>
+
 <!-- ================= CHAPTER 2 ================= -->
-<section id="ch2">
+<div id="ch2" class="section">
 <h2>Chapter 2: Probability</h2>
 <ul>
 <li>Definition of Probability</li>
-<li>Interpretation of Probability Values</li>
-<li>Addition Rule</li>
-<li>Multiplication Rule</li>
-<li>Bayes’ Theorem</li>
-</ul>
+<li>Addition & Multiplication Theorem</li>
+<li>Conditional Probability</li>
+<li>Bayes Theorem<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 2 – Probability</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Probability is a branch of mathematics that deals with the study of uncertainty.
+        It helps in predicting the likelihood of occurrence of an event.
+    </p>
 </section>
+
+<section>
+    <h2>2. Definition of Probability</h2>
+    <p>
+        Probability of an event is defined as the ratio of the number of favorable
+        outcomes to the total number of equally likely outcomes.
+    </p>
+    <p>
+        <b>Formula:</b> P(E) = (Number of favorable outcomes) / (Total number of outcomes)
+    </p>
+</section>
+
+<section>
+    <h2>3. Interpretation of Probability Value</h2>
+    <p>
+        The value of probability always lies between 0 and 1.
+    </p>
+    <ul>
+        <li>P(E) = 0 → Event is impossible</li>
+        <li>P(E) = 1 → Event is certain</li>
+        <li>0 &lt; P(E) &lt; 1 → Event is possible</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Addition Rule of Probability</h2>
+    <p>
+        The addition rule is used to find the probability of occurrence of at least one
+        of the two events.
+    </p>
+    <p>
+        <b>Formula:</b> P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+    </p>
+    <p>
+        If A and B are mutually exclusive:
+        <br>
+        <b>P(A ∪ B) = P(A) + P(B)</b>
+    </p>
+</section>
+
+<section>
+    <h2>5. Multiplication Rule of Probability</h2>
+    <p>
+        The multiplication rule is used to find the probability of occurrence of two
+        events together.
+    </p>
+    <p>
+        <b>Formula:</b> P(A ∩ B) = P(A) × P(B | A)
+    </p>
+    <p>
+        If A and B are independent:
+        <br>
+        <b>P(A ∩ B) = P(A) × P(B)</b>
+    </p>
+</section>
+
+<section>
+    <h2>6. Bayes’ Rule</h2>
+    <p>
+        Bayes’ rule is used to find the conditional probability of an event when some
+        related information is given.
+    </p>
+    <p>
+        <b>Formula:</b>
+        <br>
+        P(A | B) = [P(B | A) × P(A)] / P(B)
+    </p>
+    <p>
+        Bayes’ theorem is widely used in statistics, machine learning, and decision
+        making.
+    </p>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Probability plays a vital role in predicting uncertain events. Understanding its
+        rules and applications helps in solving real-world problems efficiently.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Chapter 2 – Probability</p>
+</footer>
+
+</body>
+</html></li>
+</ul>
+</div>
 
 <!-- ================= LAB 1 ================= -->
-<section id="lab1">
-<h2>Lab 1: Data Handling & Visualization</h2>
+<div id="lab1" class="section">
+<h2>Lab 1: Data Visualization</h2>
+<p>Histogram, Box Plot, Skewness graphs and interpretation.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab – Data Handling and Data Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.6;
+        }
 
-<h3>Histogram</h3>
-<div class="chart">
-<svg width="400" height="200">
-<rect x="50" y="80" width="40" height="100" fill="#2563eb"/>
-<rect x="110" y="40" width="40" height="140" fill="#2563eb"/>
-<rect x="170" y="20" width="40" height="160" fill="#2563eb"/>
-<rect x="230" y="60" width="40" height="120" fill="#2563eb"/>
-</svg>
-</div>
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-<h3>Skewness</h3>
-<div class="chart">
-<svg width="400" height="200">
-<path d="M20 160 Q200 20 380 160" fill="none" stroke="#16a34a" stroke-width="3"/>
-</svg>
-</div>
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
 
-<h3>Box Plot</h3>
-<div class="chart">
-<svg width="400" height="120">
-<line x1="60" y1="60" x2="340" y2="60" stroke="black"/>
-<rect x="150" y="40" width="100" height="40" fill="#facc15"/>
-<line x1="200" y1="40" x2="200" y2="80" stroke="black"/>
-</svg>
-</div>
+        .chart {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        svg {
+            background: #f9fafb;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>Lab Introduction</h2>
+    <p>
+        This lab introduces basic concepts of data handling and data visualization.
+        Graphical representations help in understanding data distribution, spread,
+        and central tendency.
+    </p>
 </section>
+
+<section>
+    <h2>Histogram</h2>
+    <p>
+        A histogram represents frequency distribution using continuous bars.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="200">
+            <rect x="40" y="80" width="40" height="100" fill="#2563eb"/>
+            <rect x="90" y="40" width="40" height="140" fill="#2563eb"/>
+            <rect x="140" y="20" width="40" height="160" fill="#2563eb"/>
+            <rect x="190" y="60" width="40" height="120" fill="#2563eb"/>
+            <rect x="240" y="100" width="40" height="80" fill="#2563eb"/>
+        </svg>
+        <p><b>Fig:</b> Histogram</p>
+    </div>
+</section>
+
+<section>
+    <h2>Skewness</h2>
+    <p>
+        Skewness indicates asymmetry in a data distribution.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="200">
+            <path d="M20 160 Q120 20 380 160" fill="none" stroke="#16a34a" stroke-width="3"/>
+        </svg>
+        <p><b>Fig:</b> Positively Skewed Distribution</p>
+    </div>
+</section>
+
+<section>
+    <h2>Box Plot</h2>
+    <p>
+        A box plot shows data distribution using minimum, quartiles, median, and maximum.
+    </p>
+
+    <div class="chart">
+        <svg width="400" height="120">
+            <line x1="50" y1="60" x2="350" y2="60" stroke="black"/>
+            <rect x="140" y="40" width="120" height="40" fill="#facc15"/>
+            <line x1="200" y1="40" x2="200" y2="80" stroke="black" stroke-width="2"/>
+            <line x1="100" y1="60" x2="140" y2="60" stroke="black"/>
+            <line x1="260" y1="60" x2="300" y2="60" stroke="black"/>
+        </svg>
+        <p><b>Fig:</b> Box Plot</p>
+    </div>
+</section>
+
+<section>
+    <h2>Measures of Central Tendency</h2>
+    <p>
+        Measures of central tendency describe the center of the data.
+    </p>
+    <ul>
+        <li><b>Mean:</b> Arithmetic average</li>
+        <li><b>Median:</b> Middle value</li>
+        <li><b>Mode:</b> Most frequent value</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Measures of Dispersion</h2>
+    <p>
+        Measures of dispersion describe the spread of data.
+    </p>
+    <ul>
+        <li>Range</li>
+        <li>Variance</li>
+        <li>Standard Deviation</li>
+        <li>Coefficient of Variation</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Data visualization techniques like histograms and box plots help in
+        understanding data distribution clearly. Measures of central tendency and
+        dispersion summarize data efficiently.
+    </p>
+</section>
+
+</body>
+</html></p>
+</div>
 
 <!-- ================= CHAPTER 3 ================= -->
-<section id="ch3">
-<h2>Chapter 3: Random Variables & Probability Distribution</h2>
+<div id="ch3" class="section">
+<h2>Chapter 3: Random Variables</h2>
 <ul>
-<li>Random Variables</li>
-<li>Discrete & Continuous Variables</li>
-<li>Binomial Distribution</li>
-<li>Poisson Distribution</li>
-<li>Normal Distribution</li>
-</ul>
+<li>Discrete Random Variables</li>
+<li>Continuous Random Variables</li>
+<li>Probability Distributions<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 3 – Random Variables and Probability Distribution</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .example {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Random variables and probability distributions form the foundation of probability
+        theory. They help in modeling real-world random experiments mathematically.
+    </p>
 </section>
+
+<section>
+    <h2>2. Random Variables</h2>
+    <p>
+        A random variable is a function that assigns a numerical value to each outcome
+        of a random experiment.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Tossing a coin  
+        <br>
+        Let X = number of heads obtained  
+        <br>
+        Possible values of X: 0 or 1
+    </div>
+</section>
+
+<section>
+    <h2>3. Types of Random Variables</h2>
+    <ul>
+        <li><b>Discrete Random Variable:</b> Takes countable values.</li>
+        <li><b>Continuous Random Variable:</b> Takes uncountable values within an interval.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Discrete Random Variable</h2>
+    <p>
+        A discrete random variable takes a finite or countably infinite number of values.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Number of defective items in a batch
+    </div>
+</section>
+
+<section>
+    <h2>5. Continuous Random Variable</h2>
+    <p>
+        A continuous random variable takes values over a continuous range.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Time taken to complete a task
+    </div>
+</section>
+
+<section>
+    <h2>6. Probability Distribution</h2>
+    <p>
+        A probability distribution describes how probabilities are assigned to values
+        of a random variable.
+    </p>
+</section>
+
+<section>
+    <h2>7. Binomial Distribution</h2>
+    <p>
+        Binomial distribution applies to experiments with a fixed number of trials where
+        each trial has two possible outcomes.
+    </p>
+    <p>
+        <b>Formula:</b>  
+        P(X = x) = ⁿCₓ pˣ qⁿ⁻ˣ
+    </p>
+    <ul>
+        <li>n = number of trials</li>
+        <li>p = probability of success</li>
+        <li>q = 1 − p</li>
+    </ul>
+</section>
+
+<section>
+    <h2>8. Poisson Distribution</h2>
+    <p>
+        Poisson distribution is used to model the number of occurrences of an event
+        in a fixed interval of time or space.
+    </p>
+    <p>
+        <b>Formula:</b>  
+        P(X = x) = (e⁻ˡ λˣ) / x!
+    </p>
+    <p>
+        where λ is the mean number of occurrences.
+    </p>
+</section>
+
+<section>
+    <h2>9. Normal Distribution</h2>
+    <p>
+        Normal distribution is a continuous probability distribution that is symmetric
+        about the mean.
+    </p>
+    <ul>
+        <li>Mean = μ</li>
+        <li>Standard Deviation = σ</li>
+        <li>Bell-shaped curve</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Random variables and probability distributions help in modeling uncertainty and
+        analyzing real-world random phenomena. The binomial, Poisson, and normal
+        distributions are widely used in statistics and engineering.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Chapter 3 – Random Variables and Probability Distribution</p>
+</footer>
+
+</body>
+</html></li>
+</ul>
+</div>
 
 <!-- ================= CHAPTER 4 ================= -->
-<section id="ch4">
+<div id="ch4" class="section">
 <h2>Chapter 4: Statistical Inference</h2>
 <ul>
-<li>Hypothesis Testing Terminologies</li>
-<li>Confidence Interval</li>
-<li>Sample Size Determination</li>
-<li>Test for Proportions</li>
-<li>Test for Means (Single & Difference)</li>
-</ul>
+<li>Hypothesis Testing</li>
+<li>Confidence Intervals</li>
+<li>Z-test & t-test<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 3 – Random Variables and Probability Distribution</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 30px;
+            line-height: 1.7;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .example {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+    <h2>1. Introduction</h2>
+    <p>
+        Random variables and probability distributions form the foundation of probability
+        theory. They help in modeling real-world random experiments mathematically.
+    </p>
 </section>
 
+<section>
+    <h2>2. Random Variables</h2>
+    <p>
+        A random variable is a function that assigns a numerical value to each outcome
+        of a random experiment.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Tossing a coin  
+        <br>
+        Let X = number of heads obtained  
+        <br>
+        Possible values of X: 0 or 1
+    </div>
+</section>
+
+<section>
+    <h2>3. Types of Random Variables</h2>
+    <ul>
+        <li><b>Discrete Random Variable:</b> Takes countable values.</li>
+        <li><b>Continuous Random Variable:</b> Takes uncountable values within an interval.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Discrete Random Variable</h2>
+    <p>
+        A discrete random variable takes a finite or countably infinite number of values.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Number of defective items in a batch
+    </div>
+</section>
+
+<section>
+    <h2>5. Continuous Random Variable</h2>
+    <p>
+        A continuous random variable takes values over a continuous range.
+    </p>
+
+    <div class="example">
+        <b>Example:</b> Time taken to complete a task
+    </div>
+</section>
+
+<section>
+    <h2>6. Probability Distribution</h2>
+    <p>
+        A probability distribution describes how probabilities are assigned to values
+        of a random variable.
+    </p>
+</section>
+
+<section>
+    <h2>7. Binomial Distribution</h2>
+    <p>
+        Binomial distribution applies to experiments with a fixed number of trials where
+        each trial has two possible outcomes.
+    </p>
+    <p>
+        <b>Formula:</b>  
+        P(X = x) = ⁿCₓ pˣ qⁿ⁻ˣ
+    </p>
+    <ul>
+        <li>n = number of trials</li>
+        <li>p = probability of success</li>
+        <li>q = 1 − p</li>
+    </ul>
+</section>
+
+<section>
+    <h2>8. Poisson Distribution</h2>
+    <p>
+        Poisson distribution is used to model the number of occurrences of an event
+        in a fixed interval of time or space.
+    </p>
+    <p>
+        <b>Formula:</b>  
+        P(X = x) = (e⁻ˡ λˣ) / x!
+    </p>
+    <p>
+        where λ is the mean number of occurrences.
+    </p>
+</section>
+
+<section>
+    <h2>9. Normal Distribution</h2>
+    <p>
+        Normal distribution is a continuous probability distribution that is symmetric
+        about the mean.
+    </p>
+    <ul>
+        <li>Mean = μ</li>
+        <li>Standard Deviation = σ</li>
+        <li>Bell-shaped curve</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Random variables and probability distributions help in modeling uncertainty and
+        analyzing real-world random phenomena. The binomial, Poisson, and normal
+        distributions are widely used in statistics and engineering.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Chapter 3 – Random Variables and Probability Distribution</p>
+</footer>
+
+</body>
+</html></li>
+</ul>
+</div>
+
+<script>
+function showSection(id){
+    let sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
 <!-- ================= LAB 2 ================= -->
-<section id="lab2">
+
+<div id="lab2" class="section">
 <h2>Lab 2: Probability Distribution & Hypothesis Testing</h2>
 
 <h3>Normal Distribution</h3>
@@ -326,20 +1087,36 @@ footer{
 </div>
 
 <h3>Hypothesis Testing Flow</h3>
-<div class="chart">
-<svg width="400" height="140">
-<rect x="20" y="40" width="120" height="40" fill="#fde68a"/>
-<text x="40" y="65">H₀</text>
-<line x1="140" y1="60" x2="200" y2="60" stroke="black"/>
-<rect x="200" y="40" width="120" height="40" fill="#bbf7d0"/>
-<text x="225" y="65">Decision</text>
-</svg>
+
+<p><b>Given Data</b></p>
+<ul>
+<li>Sample mean (x̄) = 1570 hours</li>
+<li>Population mean (μ₀) = 1600 hours</li>
+<li>Standard deviation (σ) = 120 hours</li>
+<li>Sample size (n) = 100</li>
+<li>Level of significance (α) = 0.05</li>
+</ul>
+
+<h4>Step 1: Hypotheses</h4>
+<p>
+H₀ : μ = 1600  
+<br>
+H₁ : μ ≠ 1600 (Two-tailed test)
+</p>
+
+<h4>Step 2: Test Statistic (Z-test)</h4>
+<p>
+Z = (x̄ − μ₀) / (σ / √n)  
+<br>
+Z = (1570 − 1600) / (120 / √100)  
+<br>
+Z = −2.5
+</p>
+
+<h4>Step 3: Decision</h4>
+<p>
+p-value = 0.0124  
+<br>
+Since p-value &lt; 0.05 → <b>Reject H₀</b>
+</p>
 </div>
-</section>
-
-<footer>
-<p>© 2026 Statistics Portfolio</p>
-</footer>
-
-</body>
-</html>
